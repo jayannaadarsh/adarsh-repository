@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1662" started-at="2018-12-07T05:05:59Z" finished-at="2018-12-07T05:06:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1662" started-at="2018-12-07T05:05:59Z" finished-at="2018-12-07T05:06:00Z">
+      <class name="com.qa.test.GetApiTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.qa.test.GetApiTest@7946e1f4]" name="SetUp" is-config="true" duration-ms="9" started-at="2018-12-07T10:35:59Z" finished-at="2018-12-07T10:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="gettest()[pri:0, instance:com.qa.test.GetApiTest@7946e1f4]" name="gettest" duration-ms="1627" started-at="2018-12-07T10:35:59Z" finished-at="2018-12-07T10:36:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettest -->
+      </class> <!-- com.qa.test.GetApiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
