@@ -2,6 +2,7 @@ package com.qa.client;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.http.Header;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -13,7 +14,7 @@ import org.json.JSONObject;
 
 public class RestClient {
 	
-	//Get method
+	//1.Get method without headers
 	
 	public  CloseableHttpResponse Get(String url) throws Exception, IOException
 	{
@@ -22,6 +23,24 @@ public class RestClient {
 		CloseableHttpResponse closablehttpresponse = httpclient.execute(httpget);// hit the url
 		return closablehttpresponse;
 		
+	}
+
+
+	//2.Get method With headers
+
+	public  CloseableHttpResponse Get(String url, HashMap<String, String> headersMap) throws Exception, IOException
+	{
+		CloseableHttpClient httpclient= HttpClients.createDefault();
+		HttpGet httpget = new HttpGet(url); //get request
+		for (Map.Entry<String, String> entery: headersMap.entrySet())
+		{
+			httpget.addHeader(entery.getKey(), entery.getValue());
+			
+		}
+
+		CloseableHttpResponse closablehttpresponse = httpclient.execute(httpget);// hit the url
+		return closablehttpresponse;
+
 	}
 	
 	
